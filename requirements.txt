@@ -5,3 +5,5 @@ jupyter>=1.0.0
 numpy>=1.26.0
 opencv-python>=4.9.0
 matplotlib>=3.8.0
+PyYAML>=6.0
+shapely>=2.0.0
