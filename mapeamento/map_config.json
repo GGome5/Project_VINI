@@ -1,0 +1,27 @@
+{
+  "resolution": 0.05,
+  "origin_x": -24.400000000000002,
+  "origin_y": -25.6,
+  "width": 976,
+  "height": 1024,
+  "inflation_radius_px": 2,
+  "inflation_radius_m": 0.1,
+  "landmarks_px": {
+    "Rotatória Superior Direita": {
+      "col": 645.33,
+      "row": 97.49
+    },
+    "Rotatória Central Esquerda": {
+      "col": 67.28,
+      "row": 389.51
+    },
+    "Rotatória Central Direita": {
+      "col": 645.17,
+      "row": 389.33
+    },
+    "Rotatória Inferior Direita": {
+      "col": 644.99,
+      "row": 733.3
+    }
+  }
+}
