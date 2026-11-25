@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{c  c c c c c  c c}
+\toprule
+ & \multicolumn{5}{c}{NOPT-B-RRT*} & \multicolumn{2}{c}{PRM-VNS} \\
+\cmidrule(r){3-6} \cmidrule(l){7-8}
+ & $I$ & $\bar{\%R}$ & $\bar{\%B}$ & $\sigma{\bar{\%R}}$ & $\sigma{\bar{\%B}}$
+  & $\bar{\%R}$ & $\bar{\%B}$ \\
+\midrule
+% linha 1
+\multirow{5}{*}{\rotatebox{90}{LOW}} &  1500 & 0.9337  & 0.0564 & 0.9466 & 0.0358 &  \\
+% linha 2
+ &  3000 & 0.9266  & 0.0551 & 0.9468 & 0.0355 &  \\
+% linha 3
+ &  6000 & 0.9128  & 0.0683 & 0.9494 & 0.0330 &  \\
+% linha 4
+ &  12000 & 0.9161  & 0.0747 & 0.9475 & 0.0393 &  \\
+% linha 5
+ &  24000 & 0.9117  & 0.0571 & 0.9432 & 0.0382 &  \\
+\midrule
+% linha 1
+\multirow{5}{*}{\rotatebox{90}{MEDIUM}} &  1500  & 0.5652 & 0.0735 & 0.4566 & 0.0940 &  \\
+% linha 2
+ &  3000  & 0.8840 & 0.1021 & 0.7791 & 0.0976 &  \\
+% linha 3
+ &  6000  & 0.9557 & 0.0391 & 0.8671 & 0.0478 &  \\
+% linha 4
+ &  12000  & 0.9392 & 0.0697 & 0.8589 & 0.0563 &  \\
+% linha 5
+ &  24000  & 0.9506 & 0.0431 & 0.8568 & 0.0455 &  \\
+\midrule
+% linha 1
+\multirow{5}{*}{\rotatebox{90}{HIGH}} & 1500  & 0.4132 & 0.0768 & 0.2355 & 0.0788 &  &  \\
+% linha 2
+ & 3000  & 0.5554 & 0.0890 & 0.3533 & 0.0704 &  &  \\
+% linha 3
+ & 6000  & 0.8209 & 0.0920 & 0.5833 & 0.0694 &  &  \\
+% linha 4
+ & 12000 & 0.9560 & 0.0460 & 0.7665 & 0.0546 &  &  \\
+% linha 5
+ & 24000 & 0.9547 & 0.0372 & 0.7465 & 0.0528 &  &  \\
+\bottomrule
+\end{tabular}
+\caption{Comparação entre NOPT-B\_RRT* e PRM-VNS}
+\label{tab:comparison}
+\end{table}
+
+\end{document}
