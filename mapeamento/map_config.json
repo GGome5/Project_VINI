@@ -1,27 +1,50 @@
 {
-  "resolution": 0.05,
-  "origin_x": -24.400000000000002,
-  "origin_y": -25.6,
+  "resolution": 0.0815303762012642,
+  "origin_x": -39.5724259486082,
+  "origin_y": -41.74300934634501,
   "width": 976,
   "height": 1024,
   "inflation_radius_px": 2,
-  "inflation_radius_m": 0.1,
+  "inflation_radius_m": 0.1630607524025284,
   "landmarks_px": {
-    "Rotatória Superior Direita": {
-      "col": 645.33,
-      "row": 97.49
+    "Rotatória Superior Esquerda": {
+      "col": 330.01,
+      "row": 289.7
     },
     "Rotatória Central Esquerda": {
-      "col": 67.28,
-      "row": 389.51
+      "col": 329.83,
+      "row": 633.67
+    },
+    "Rotatória Inferior Esquerda": {
+      "col": 329.67,
+      "row": 925.51
     },
     "Rotatória Central Direita": {
-      "col": 645.17,
-      "row": 389.33
+      "col": 907.72,
+      "row": 633.49
+    }
+  },
+  "resolution_x": 0.08155490654592147,
+  "resolution_y": 0.08150584585660693,
+  "rotated_180_coppelia": true,
+  "calibration_source": "Occupancy_Grid_-_Terminal_Update.png (84.0m x 84.0m, 0.10m/cell)",
+  "max_calibration_error_m": 0.0281,
+  "landmarks_world_m": {
+    "Rotatória Superior Esquerda": {
+      "x": -12.637,
+      "y": 18.077
     },
-    "Rotatória Inferior Direita": {
-      "col": 644.99,
-      "row": 733.3
+    "Rotatória Central Esquerda": {
+      "x": -12.653,
+      "y": -9.935
+    },
+    "Rotatória Inferior Esquerda": {
+      "x": -12.631,
+      "y": -33.745
+    },
+    "Rotatória Central Direita": {
+      "x": 34.477,
+      "y": -9.972
     }
   }
 }
