@@ -1,11 +1,11 @@
 {
-  "resolution": 0.0815303762012642,
-  "origin_x": -39.5724259486082,
-  "origin_y": -41.74300934634501,
+  "resolution": 0.08153037620126422,
+  "origin_x": -39.572425948608206,
+  "origin_y": -41.74300934634502,
   "width": 976,
   "height": 1024,
   "inflation_radius_px": 2,
-  "inflation_radius_m": 0.1630607524025284,
+  "inflation_radius_m": 0.16306075240252843,
   "landmarks_px": {
     "Rotatória Superior Esquerda": {
       "col": 330.01,
@@ -24,7 +24,7 @@
       "row": 633.49
     }
   },
-  "resolution_x": 0.08155490654592147,
+  "resolution_x": 0.08155490654592149,
   "resolution_y": 0.08150584585660693,
   "rotated_180_coppelia": true,
   "calibration_source": "Occupancy_Grid_-_Terminal_Update.png (84.0m x 84.0m, 0.10m/cell)",
