@@ -65,6 +65,7 @@ Project_VINI/
    - Integra diretamente o planejador em `hydrone-sim-python/` (`CalibratedCityRRT`) alinhado aos limites calibrados do `map_config.json` e ao `mapa_rrt_pb_coppelia.png`, com checagem de colisão sub-pixel e amostragem sobre a malha viária livre (`grid_rrt == 0`).
    - Plota a árvore explorada e a rota final (ida + retorno) e exporta os *waypoints* reamostrados (`planejamento/waypoints_rrt.csv` e `waypoints_rrt.npy`) livres de colisões para o controle.
    - ![Rota RRT Planejada](planejamento/rota_rrt_planejada.png)
-4. **Módulo 4 — Controle Cinemático (`Modelo Bicicleta / Pure Pursuit`, Células 12 e 13)**:
-   - Implementa o controlador `PurePursuitController` (modelo cinemático bicicleta/Ackermann com janela de busca progressiva e redução automática de velocidade em curvas).
-   - Fecha a malha completa no CoppeliaSim medindo automaticamente a distância entre eixos ($L$) entre `rear_wheel_joint` e `steering_joint`, alimentando o MCL com a odometria real das juntas (`R = 0,030 m`) + LiDAR `fastHokuyo` e guiando o VINI ao longo de `planejamento/waypoints_rrt.npy`.
+4. **Módulo 4 — Controle Cinemático (`Modelo Bicicleta / Pure Pursuit`, Células 12 a 14)**:
+   - **Célula 12**: implementa o controlador `PurePursuitController` (modelo cinemático bicicleta/Ackermann com janela de busca progressiva, parada por `stop_pt`/`stop_tol` e redução automática de velocidade em curvas).
+   - **Célula 13 (Cenário 1 — Rota Simples até o Goal)**: fecha a malha no CoppeliaSim seguindo `planejamento/waypoints_rrt.npy` até o objetivo com MCL, `HokuyoSensorSim` vetorizado e suavização de esterçamento (`planejamento/navegacao_autonoma_final.png`).
+   - **Célula 14 (Cenário 2 — Circuito Urbano Completo)**: percorre um circuito fechado com múltiplos *waypoints* pela cidade densificados a cada `0,5 m` (`planejamento/navegacao_cidade_final.png`).
